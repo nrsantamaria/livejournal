@@ -1,0 +1,10 @@
+<h1>Welcome to DeadJournal</h1>
+<h2>Go Away.</h2>
+
+<ul>
+  {{#each model as |blog|}}
+    {{blog-tile blog=blog destroyBlog="destroyBlog"}}
+  {{/each}}
+</ul>
+
+{{new-blog saveBlog2="saveBlog3"}}
