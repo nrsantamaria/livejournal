@@ -8,12 +8,12 @@ export default Ember.Component.extend({
     },
     saveBlog1() {
       var params = {
-        date: this.get('date'),
-        time: this.get('time'),
-        title: this.get('title'),
-        body: this.get('body'),
-        mood: this.get('mood'),
-        music: this.get('music')
+        date: this.get('date') ? this.get('date'): "",
+        time: this.get('time') ? this.get('time'): "",
+        title: this.get('title') ? this.get('title'): "",
+        body: this.get('body') ? this.get('body'): "",
+        mood: this.get('mood') ? this.get('mood'): "",
+        music: this.get('music') ? this.get('music'): ""
       };
       this.set('addNewBlog', false);
       this.sendAction('saveBlog2', params)
