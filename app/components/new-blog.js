@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         music: this.get('music') ? this.get('music'): ""
       };
       this.set('addNewBlog', false);
-      this.sendAction('saveBlog2', params)
+      this.sendAction('saveBlog2', params);
     }
   }
 });

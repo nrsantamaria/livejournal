@@ -10,6 +10,5 @@
     Current Mood: {{blog.mood}} <br>
     Current Music: {{blog.music}}
   </div>
-  {{update-blog blog=blog update="update"}}
-  <button {{action 'delete' blog}}>Delete Blog</button>
+  {{#link-to 'blog' blog.id}}<button>Click for Comments</button>{{/link-to}}
 </div>

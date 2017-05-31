@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         mood: this.get('mood'),
         music: this.get('music')
       };
-      this.set('updateNewBlog', false);
+      this.set('updateBlogForm', false);
       this.sendAction('update', blog, params);
     }
   }

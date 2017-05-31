@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="blog">
+    <div class="blog-header">
+      {{blog.date}} {{blog.time}} <br>
+      {{blog.title}}
+    </div>
+    <div class="blog-body">
+      {{blog.body}} <br>
+    </div>
+    <div class="blog-footer">
+      Current Mood: {{blog.mood}} <br>
+      Current Music: {{blog.music}}
+    </div>
+    {{update-blog blog=blog update="update"}}
+    <button {{action 'delete' blog}}>Delete Blog</button>
+  </div>
+  <div class="comments">
+    <h2> Comments </h2>
+    <ul>
+      {{#each blog.comments as |comment|}}
+        {{comment-tile comment=comment destroyComment="destroyComment"}}
+      {{/each}}
+    </ul>
+  </div>
+</div>

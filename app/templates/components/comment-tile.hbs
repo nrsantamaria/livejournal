@@ -1,0 +1,10 @@
+<div class="comment">
+    <div class="comment-header">
+      From: {{comment.author}} <br>
+      Date: {{comment.date}} {{comment.time}}<br>
+    </div>
+    <div class="comment-body">
+      {{comment.comment}}
+    </div>
+    <button {{action 'delete' comment}}>Delete Comment</button>
+</div>

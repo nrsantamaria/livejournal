@@ -6,5 +6,6 @@ export default DS.Model.extend({
   title: DS.attr(),
   body: DS.attr(),
   mood: DS.attr(),
-  music: DS.attr()
+  music: DS.attr(),
+  comments: DS.hasMany('comment', { async: true })
 });

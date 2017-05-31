@@ -1,4 +1,4 @@
-{{#if updateNewBlog}}
+{{#if updateBlogForm}}
   <h2>Change Melodramatic Blog Post</h2>
   <div>
     <form>
@@ -31,5 +31,5 @@
     </form>
   </div>
 {{else}}
-  <button {{action 'updateFormShow'}}>Update Post</button>
+  <button {{action 'updateBlogForm'}}>Update Post</button>
 {{/if}}

@@ -1,10 +1,11 @@
-<h1>Welcome to DeadJournal</h1>
-<h2>Go Away.</h2>
+<div class="row">
+  <h1>Welcome to DeadJournal</h1>
+  <h2>Go Away.</h2>
+</div>
 
-<ul>
-  {{#each model as |blog|}}
-    {{blog-tile blog=blog update="update" destroyBlog="destroyBlog"}}
-  {{/each}}
-</ul>
+{{#each model.blogs as |blog|}}
+  {{blog-tile blog=blog}}
+{{/each}}
 
 {{new-blog saveBlog2="saveBlog3"}}
+{{new-comment saveComment="saveComment"}}
