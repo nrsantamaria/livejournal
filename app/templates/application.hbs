@@ -1,11 +1,23 @@
 <div class="jumbotron">
-  <h1>LiveJournal</h1>
-  <nav>
-    {{#link-to 'contact'}}Contact{{/link-to}} |
-    {{#link-to 'about'}}About{{/link-to}} |
+  <img src="img/logo.gif" alt="livejournal logo" />
+  <nav class="nav1">
     {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'about'}}About{{/link-to}} 
+    {{#link-to 'contact'}}Contact{{/link-to}}
+  </nav>
+  <nav class="nav2">
+    {{new-blog saveBlog2="saveBlog3"}}
   </nav>
 </div>
 <div class="container">
   {{outlet}}
 </div>
+<br>
+<br>
+<footer>
+  {{#link-to 'contact'}}Terms of Service{{/link-to}} |
+  {{#link-to 'about'}}Privacy Policy{{/link-to}} |
+  {{#link-to 'index'}}Legal Information{{/link-to}} |
+  {{#link-to 'contact'}}Site Map{{/link-to}} |
+  {{#link-to 'about'}}Browse Options{{/link-to}}
+</footer>

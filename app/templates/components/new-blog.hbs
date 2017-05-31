@@ -16,7 +16,9 @@
       </div>
       <div class="form-group">
         <label for="body">Post:</label>
-        {{input value=body id="body"}}
+        <textarea rows="8" cols="40">
+          {{input value=body id="body"}}
+        </textarea>
       </div>
       <div class="form-group">
         <label for="mood">Current Mood:</label>
@@ -27,9 +29,9 @@
         {{input value=music id="music"}}
       </div>
 
-      <button {{action 'saveBlog1'}}>Save</button>
+      <a href="newPage.htm" {{action 'saveBlog1'}}>(Save)</a>
     </form>
   </div>
 {{else}}
-  <button {{action 'blogFormShow'}}>New Blog</button>
+  <a href="newPage.htm" {{action 'blogFormShow'}}>New Post</a>
 {{/if}}

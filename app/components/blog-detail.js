@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       }
     },
     destroyComment(comment) {
-      this.sendAction('destroyComment', review);
+      this.sendAction('destroyComment', comment);
     }
   }
 });

@@ -1,14 +1,19 @@
 <div class="row">
-  <div class="blog-header">
-    {{blog.date}} {{blog.time}} <br>
-    {{blog.title}}
+  <div class="blog-header-index">
+    {{blog.date}} {{blog.time}}
   </div>
   <div class="blog-body">
+    <div class="blog-title">
+      {{blog.title}}
+    </div>
     {{blog.body}} <br>
   </div>
   <div class="blog-footer">
-    Current Mood: {{blog.mood}} <br>
-    Current Music: {{blog.music}}
+    <strong>Current Mood:</strong> {{blog.mood}} <br>
+    <strong>Current Music:</strong> {{blog.music}}
   </div>
-  {{#link-to 'blog' blog.id}}<button>Click for Comments</button>{{/link-to}}
+  <br>
+  <span class="underline">{{#link-to 'blog' blog.id}}(Click for Comments){{/link-to}}</span>
+  <br>
+  <br>
 </div>

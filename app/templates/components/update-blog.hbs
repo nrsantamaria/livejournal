@@ -27,9 +27,9 @@
         {{input value=music id="music" placeholder=blog.music}}
       </div>
 
-      <button {{action 'update' blog}}>Save</button>
+      <a class="underline" href="newPage.htm" {{action 'update' blog}}>Save</a>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateBlogForm'}}>Update Post</button>
+  <a class="underline" href="newPage.htm" {{action 'updateBlogForm'}}>(Update Post)</a>
 {{/if}}

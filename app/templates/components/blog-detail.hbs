@@ -1,8 +1,10 @@
 <div class="row">
   <div class="blog">
-    <div class="blog-header">
-      {{blog.date}} {{blog.time}} <br>
-      {{blog.title}}
+    <div class="blog-header-page">
+      <div class="blog-title">
+        {{blog.title}}
+      </div>
+      {{blog.date}} {{blog.time}}
     </div>
     <div class="blog-body">
       {{blog.body}} <br>
@@ -12,10 +14,12 @@
       Current Music: {{blog.music}}
     </div>
     {{update-blog blog=blog update="update"}}
-    <button {{action 'delete' blog}}>Delete Blog</button>
+    <a class="underline" href="newPage.htm" {{action 'delete' blog}}>(Delete Post)</a>
   </div>
   <div class="comments">
-    <h2> Comments </h2>
+    <div class="blog-title">
+      Comments
+    </div>
     <ul>
       {{#each blog.comments as |comment|}}
         {{comment-tile comment=comment destroyComment="destroyComment"}}

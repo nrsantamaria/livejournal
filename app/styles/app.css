@@ -1,0 +1,50 @@
+.jumbotron, footer{
+  background-color: #69C;
+}
+
+.nav1 {
+  background-color: rgb(0, 51, 102);
+  border: 1px white solid;
+}
+
+.nav1 a, footer a {
+  color: white;
+  padding: 5px;
+}
+
+.nav1 a:first-child, footer a:first-child, .nav2 {
+  padding-left: 65px;
+}
+
+body{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.blog-title{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.blog-header-index {
+  background-color: #69C;
+  color: white;
+  padding: 6px;
+  margin: 16px 0 8px 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.nav2, .comment-header{
+  background-color: rgb(187, 221, 255);
+}
+
+.nav2 a {
+  color: black;
+}
+
+#frank {
+  width: 100%;
+}
