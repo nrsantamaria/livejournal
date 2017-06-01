@@ -3,5 +3,5 @@
 </div>
 
 {{#each model.blogs as |blog|}}
-  {{blog-tile blog=blog}}
+  {{blog-tile blog=blog update="update" destroyBlog="destroyBlog"}}
 {{/each}}

@@ -13,11 +13,6 @@ export default Ember.Route.extend({
       var newBlog = this.store.createRecord('blog', params);
       newBlog.save();
       this.transitionTo('index');
-    },
-    saveComment(params) {
-      var newComment = this.store.createRecord('comment', params);
-      newComment.save();
-      this.transitionTo('index');
     }
   }
 });
