@@ -34,7 +34,7 @@ export default Ember.Route.extend({
      newComment.save().then(function() {
        return blog.save();
      });
-     this.transitionTo('blog', blog);
+    //  this.transitionTo('blog', blog);
    }
   }
 });
