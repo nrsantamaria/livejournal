@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     saveComment() {
       var params = {
         author: this.get('author') ? this.get('author') : "",
-        comment: this.get('comment') ? this.get('comment') : "",
+        content: this.get('content') ? this.get('content') : "",
         date: this.get('date') ? this.get('date') : "",
         time: this.get('time') ? this.get('time') : "",
         blog: this.get('blog')

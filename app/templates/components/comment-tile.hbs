@@ -1,10 +1,10 @@
 <div class="comment">
     <div class="comment-header">
-      From: {{comment.author}} <br>
-      Date: {{comment.date}} {{comment.time}}<br>
+      <strong>From:</strong> {{comment.author}} <br>
+      <strong>Date:</strong> {{comment.date}} {{comment.time}}<br>
     </div>
     <div class="comment-body">
-      {{comment.comment}}
+      {{comment.content}}
     </div>
     <a class="underline" href="newPage.htm" {{action 'delete' comment}}>(Delete Comment)</a>
 </div>
